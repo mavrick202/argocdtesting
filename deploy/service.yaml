@@ -3,6 +3,7 @@ kind: Service
 metadata:
   labels:
     app: deploy01
+    run: deploy01
     app.kubernetes.io/instance: deploy01
   name: deploy01
 spec:
@@ -12,4 +13,5 @@ spec:
     targetPort: 80
   selector:
     app: deploy01
+    run: deploy01
   type: NodePort
