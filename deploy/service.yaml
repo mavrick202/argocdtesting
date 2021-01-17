@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: deploy01
+    app.kubernetes.io/instance: rollingupdate
     run: deploy01
-    app.kubernetes.io/instance: deploy01
   name: deploy01
 spec:
   ports:
@@ -12,6 +11,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: deploy01
     run: deploy01
   type: NodePort
