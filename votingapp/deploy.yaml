@@ -138,7 +138,7 @@ spec:
     spec:
       containers:
       - name: result
-        image: dockersamples/examplevotingapp_result:before
+        image: sreeharshav/example-voting-app_result:latest
         ports:
         - containerPort: 80
           name: result
@@ -178,7 +178,7 @@ spec:
     spec:
       containers:
       - name: vote
-        image: dockersamples/examplevotingapp_vote:before
+        image: sreeharshav/example-voting-app_vote:latest
         ports:
         - containerPort: 80
           name: vote
@@ -213,5 +213,5 @@ spec:
         app: worker
     spec: 
       containers: 
-      - image: dockersamples/examplevotingapp_worker
+      - image: sreeharshav/example-voting-app_worker:latest
         name: worker
