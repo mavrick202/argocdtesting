@@ -15,5 +15,5 @@ spec:
         run: deploy01
     spec:
       containers:
-      - image: sreeharshav/rollingupdate:v1
+      - image: nginx:latest
         name: deploy01
