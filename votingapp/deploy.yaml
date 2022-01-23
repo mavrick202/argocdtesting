@@ -114,7 +114,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 5001
+  - port: 80
     targetPort: 80
     name: result-service
   selector:
@@ -127,7 +127,7 @@ metadata:
   labels:
     app: result
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: result
@@ -154,7 +154,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 5000
+    - port: 80
       targetPort: 80
       name: vote-service
   selector:
