@@ -127,7 +127,7 @@ metadata:
   labels:
     app: result
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: result
@@ -167,7 +167,7 @@ metadata:
   labels:
     app: vote
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: vote
