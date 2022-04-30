@@ -111,6 +111,8 @@ metadata:
   name: result
   labels:
     app: result
+  annotations:
+     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
 spec:
   type: LoadBalancer
   ports:
@@ -151,6 +153,8 @@ metadata:
   name: vote
   labels:
     apps: vote
+  annotations:
+     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
 spec:
   type: LoadBalancer
   ports:
