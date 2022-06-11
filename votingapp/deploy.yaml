@@ -62,7 +62,7 @@ metadata:
   labels:
     app: db
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: db
@@ -129,7 +129,7 @@ metadata:
   labels:
     app: result
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: result
