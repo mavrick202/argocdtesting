@@ -6,7 +6,7 @@ metadata:
     run: deploy01
   name: deploy01
 spec:
-  replicas: 6
+  replicas: 9
   selector:
     matchLabels:
       run: deploy01
